@@ -66,7 +66,7 @@ class student:
             {"id": self.id},
             { "$push": { "grades": grade } }
             )
-        print("Add grade", grade)
+        print("Add grade: ", grade)
         self.get_average()
 
     def get_average(self):
